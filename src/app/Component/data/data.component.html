@@ -4,7 +4,7 @@
         <div class="form-group">
             <h6>ASIGNACIÓN PARA UN INSTRUCTOR</h6>
             <table class="tableElements">
-                <td class="textSelec">Seleccione: </td>
+                <td class="textSelec">Selecciona un profesor: </td>
                 <td><select formControlName="selectTeacher" (ngModelChange)="onChange()" class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example" required>
                     <option *ngFor="let teacher of listTeachers" value="{{teacher.id}}">{{teacher.name}}</option>
                     </select> &nbsp;&nbsp;</td>
