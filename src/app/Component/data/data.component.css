@@ -1,0 +1,68 @@
+.datasignatures {
+    overflow-y: scroll;
+    max-height: 450px;
+}
+
+.form-select {
+    width: 80%;
+    display: inline;
+}
+
+.form-group {
+    text-align: center;
+}
+
+select {
+    font-size: 14px;
+    font-family: verdana, arial, helvetica;
+    background-color: #f1eded;
+}
+
+.tableStudent {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableElements {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rowStyle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rowSignature {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.columnStyle {
+    vertical-align: middle;
+}
+
+.textSelec {
+    float: right;
+}
+
+.imgSearch {
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 450px;
+    opacity: 30%;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+h6 {
+    text-shadow: 7px 4px 5px rgb(152, 152, 156);
+}

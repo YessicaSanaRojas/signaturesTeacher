@@ -1,0 +1,28 @@
+.divcontact {
+    width: 100%;
+    padding-left: 250px;
+}
+
+.divcontactForm {
+    width: 60%;
+}
+
+input,
+textarea {
+    font-size: 14px;
+    font-family: verdana, arial, helvetica;
+    background-color: #f1eded;
+}
+
+.textSelec {
+    float: right;
+}
+
+.styleSend {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.imgContact {
+    border-radius: 20px;
+}

@@ -1,0 +1,41 @@
+<div class="divmain">
+    <form [formGroup]="form" (ngSubmit)="send()">
+
+        <div class="form-group">
+            <h6>ASIGNACIÓN PARA UN INSTRUCTOR</h6>
+            <table class="tableElements">
+                <td class="textSelec">Seleccione: </td>
+                <td><select formControlName="selectTeacher" (ngModelChange)="onChange()" class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example" required>
+                    <option *ngFor="let teacher of listTeachers" value="{{teacher.id}}">{{teacher.name}}</option>
+                    </select> &nbsp;&nbsp;</td>
+                <td><button [disabled]="!form.valid" class="btn btn-outline-primary" type="submit">Consultar</button> <br></td>
+            </table>
+        </div>
+        <figure *ngIf="teacherObj.id == null">
+            <img class="imgSearch" src="../../../assets/backgroundQuery.png">
+        </figure>
+        <div class="datasignatures">
+            <br>
+            <div class="tableStudent" *ngIf="teacherObj.id != null">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Asignaturas</th>
+                            <th>Estudiantes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ng-container *ngFor="let teacherSignatures of teacherObj.signatures">
+                            <tr class="rowSignature">
+                                <td class="columnStyle" [attr.rowspan]="teacherSignatures.listStudentSignat.length + 1">{{teacherSignatures.name + ' ' + teacherSignatures.course.name}}</td>
+                            </tr>
+                            <tr *ngFor="let studentQuerylist of teacherSignatures.listStudentSignat">
+                                <td scope="row">{{studentQuerylist.student.name}}</td>
+                            </tr>
+                        </ng-container>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
